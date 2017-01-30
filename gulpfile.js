@@ -15,6 +15,10 @@ require('laravel-elixir-vue');
 
 elixir(function (mix) {
     mix.less('skin-default.less', 'public/css/skins/default.css');
+    mix.less('theme.less', 'public/css/theme.css');
 
-    mix.version(['public/css/skins/default.css']);
+    mix.version([
+        'public/css/skins/default.css',
+        'public/css/theme.css'
+    ]);
 });
